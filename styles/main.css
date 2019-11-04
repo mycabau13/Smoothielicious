@@ -1,0 +1,222 @@
+/* 
+Myca Bautista
+WEB 150, ASN5
+Business name: The Smoothielicious Bar
+*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: Oswald, arial, helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 2600px;
+    /* We want our font size in a range where 14px is the minimum at the
+    smallest viewport width (300px) and where 24px is the maximum at the
+    largest viewport width (1600px) */
+    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+    background-color: #ffffe9; 
+}
+button {
+    background: black;
+    border: 1px solid black;
+    color: white;
+    padding: 8px 15px;
+}
+
+button:hover {
+    background: white;
+    border: 1px solid white;
+    color: black;
+}
+
+hr.small-line {
+    width: 6%; 
+    border: 4px solid #2a2a2a;   
+}
+
+p {
+    font-family: Lato, Arial, Helvetica, sans-serif; 
+    font-size: 16px; 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-content: stretch; 
+    padding: 2% 0px 5% 0px; 
+
+}
+
+.title {
+    text-align: center;
+    margin-top: 5%; 
+    margin-bottom: 10px;  
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 200px;
+    background-image: url(../images/white-1809005_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+header div {
+    align-self: center;
+    min-width: 50%;
+    padding: 15px;
+    color: #000;
+    font-weight: bold;
+}
+
+hr.line {
+    width: 50%; 
+    border: 4px solid #2a2a2a; 
+}
+
+
+.logo {
+    color: #FF8B38; 
+    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.69); 
+}
+
+
+/* Navigation */
+nav {
+    text-transform: uppercase; 
+    background-color: #2a2a2a;
+    position: sticky;
+    top: 0;
+    padding: 10px; 
+    margin: 0 auto; 
+}
+  
+nav a {
+    color: #FFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a.active {
+    background-color: #FF8B38;
+}
+  
+nav a:hover {
+    background-color: #ffe883;
+    color: #000;
+}
+
+/* Hero - Header */
+.parallax {
+  min-height: 450px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/smoothies-1646627_1920.jpg")
+}
+
+
+/* Menu Section */
+.menu .menu-type {
+    flex-basis: 200px; /*max width*/
+}
+.menu .menu-type a {
+    text-decoration: none;
+    color: black; 
+}
+.menu .menu-type a:hover {
+    color: #FF8B38;
+}
+
+.menu .menu-type img {
+    max-width: 300px;
+    height: 200px;
+    margin: 0px 15px;
+}
+
+.menu .menu-type h3 {
+    font-size: 18px; 
+    text-align: center; 
+    padding: 5px 0px 15px 0px; 
+    margin: 0; 
+}
+
+/* About Section */
+.about-sect {
+    padding: 3% 10%; 
+    text-align: center; 
+    background-color: #ffe883;
+}
+
+.about-sect h2 {
+    background: #2a2a2a; 
+    color: white; 
+}
+
+/* Product Section */
+.product .product-type {
+    flex-basis: 600px; /*max width*/
+    margin: 10px; 
+    padding: 32px; 
+}
+
+.product-type:nth-child(1){
+    background: #ff88db; 
+}
+.product-type:nth-child(2){
+    background: #ff8383; 
+}
+.product-type:nth-child(3){
+    background: #c6ffc1; 
+}
+.product-type:nth-child(4){
+    background: #ffe883; 
+}
+
+.product .product-type img {
+    max-width: 180px;
+    border-radius: 50%;
+    height: 180px;
+    margin: 0px 20px 0px 10px; ;
+    float: left;
+    object-fit: cover;
+    box-shadow: -1px 1px 9px rgba(0, 0, 0, 0.69); 
+
+}
+
+.product .product-type h3 {
+    font-size: 18px; 
+    text-align: left; 
+}
+.product .product-type p {
+    font-size: 14px; 
+}
+
+/* Footer Section */
+
+footer {
+    padding: 5%; 
+    text-align: center;
+    background-color: #2a2a2a;
+    color: white; 
+}
+.address-foot{
+    font-size: 14px; 
+    margin-bottom: 40px; 
+}
+
+.copyright {
+    font-size: 8px; 
+    bottom: 0; 
+}
