@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- 
+Myca Bautista
+WEB 150, ASN6
+Business name: The Smoothielicious Bar 
+-->
+<html lang="en">
+    <head>
+        <title>The Smoothielicious Bar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Oswald&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <!-- Header w/ Logo,  -->
+        <header>
+            <div>
+                <hr class="line">
+                <h1>The <span class="logo">SMOOTHIELICIOUS</span> Bar</h1>
+                <hr class="line">
+            </div>
+        </header>
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <!-- Contact Page Begins -->
+        <main class="main-col">
+            <!-- Page TItle Section -->
+            <section class="page-title contact-title">
+                <h2>CONTACT US</h2> 
+                <hr class="small-line">
+                <div class="page-info">
+                    <p>
+                            15500 15 Mile Rd
+                            Fraser, MI 48026
+                    </p>
+                    <p>(524) 747-3117</p>
+                    <p>Mon-Sun: 10am-10:30pm</p>
+                </div>
+            </section>
+
+            <!-- Google Maps Section -->
+            <section class="row contact">
+                    <iframe class="map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.100644297988!2d-82.9682991850347!3d42.553155779174425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824d93c33dda0dd%3A0xd128240714b0421b!2s15500%2015%20Mile%20Rd%2C%20Fraser%2C%20MI%2048026!5e0!3m2!1sen!2sus!4v1573958584272!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <form method="post" action="submit.php" class="contact-form" name="contact_form" id="contact_form">
+                            <p>
+                                <label for="name">Full Name:</label>
+                                <input type="text" name="name" id="name">
+                            </p>
+                            <p>
+                                <label for="email">Email Address: </label>
+                                <input type="text" name="email" id="email">
+                            </p>
+                            <p>
+                                <label for="refer">How did you hear about us?</label>
+                                <select name="refer" id="refer">
+                                    <option value="">- Select One -</option>
+                                    <option value="1">Friend</option>
+                                    <option value="2">Family</option>
+                                    <option value="3">Facebook</option>
+                                    <option value="4">Google</option>
+                                    <option value="5">Other</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="comments">Message: </label>
+                                <textarea name="comments" id="comments"></textarea>
+                            </p>
+                            <p>
+                                <input type="submit" value="SEND MESSAGE">
+                            </p>
+                        </form>
+           
+            </section>
+
+        </main>
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="address-foot">
+                <h3>The SMOOTHIELICIOUS Bar</h3>
+                <p>
+                    15500 15 Mile Rd
+                    Fraser, MI 48026
+                </p>
+                <p>(524) 747-3117</p>
+
+            </div>
+            <p class="copyright"> &copy; 2019 The Smoothielicious Bar</p>
+        </footer>
+
+
+    </body>
+
+
+
+</html>
